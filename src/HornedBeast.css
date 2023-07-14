@@ -8,3 +8,13 @@
 .horned-beast img {
   width: 100%;
 }
+
+.horned-beast img:hover {
+  cursor: pointer;
+  border: 2px solid brown;
+  border-radius: 4px;
+}
+
+.horned-beast img:active {
+  transform: scale(0.5);
+}

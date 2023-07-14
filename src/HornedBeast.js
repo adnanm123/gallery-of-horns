@@ -15,14 +15,21 @@ handleLikes = () => {
     likes: this.state.likes + 1
   });
 }
+handleTitleClick = () => {
+  this.props.handleShowModalTitle(this.props.title);
+  this.props.handleShowModalDescription(this.props.description)
+  this.props.handleShowModalImageUrl(this.props.image_url)
+
+  this.handleLikes();
+}
 
 render() {
   return (
     <Card style={{ width: '18rem' }} className="horned-beast">
       <Card.Img 
+        onClick={this.handleTitleClick}
         variant="top" 
         src={this.props.image_url} 
-        onClick={this.handleLikes}
         alt= {this.props.alt}
         title= {this.props.title}
         />
