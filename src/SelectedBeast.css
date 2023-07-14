@@ -1,0 +1,13 @@
+img {
+  width: 100%;
+}
+
+#modalTitle {
+  width: 100%;
+  text-align: center;
+}
+
+#modalDescription {
+  width: 100%;
+  padding-top: 1rem;
+}
