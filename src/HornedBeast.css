@@ -1,17 +1,13 @@
-/* .horned-beast {
-  border: 1px solid black;
-  width: 24%;
-  padding: 1rem;
-  margin: 1rem;
-} */
-
+.horned-beast {
+  background-color: coral;
+}
 .horned-beast img {
   width: 100%;
 }
 
 .horned-beast img:hover {
   cursor: pointer;
-  border: 2px solid brown;
+  border: 2px solid blue;
   border-radius: 4px;
 }
 

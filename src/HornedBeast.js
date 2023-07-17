@@ -19,11 +19,11 @@ handleTitleClick = () => {
   this.props.handleShowModalTitle(this.props.title);
   this.props.handleShowModalDescription(this.props.description)
   this.props.handleShowModalImageUrl(this.props.image_url)
-
   this.handleLikes();
 }
 
 render() {
+
   return (
     <Card style={{ width: '100%' }} className="horned-beast p-1 h-100">
       <Card.Img 
@@ -40,6 +40,6 @@ render() {
         </Card.Body>
       </Card>
     );}
-    }
+}
 
 export default HornedBeast;

@@ -24,7 +24,7 @@ let beast = this.props.data.map((bea, idx) => {
 })
     return (
       <main>
-        <Row xs={1} sm={2} md={3} lg={4} xl={5} >
+        <Row xs={1} sm={2} md={3} lg={4} xl={5}>
           {beast}
         </Row>
       </main>
