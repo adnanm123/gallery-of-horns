@@ -6,7 +6,8 @@ class Main extends React.Component {
   render() {
 
 let beast = this.props.data.map((bea, idx) => {
-   return( <HornedBeast
+   return( 
+   <HornedBeast
       title={bea.title}
       image_url={bea.image_url}
       description={bea.description}

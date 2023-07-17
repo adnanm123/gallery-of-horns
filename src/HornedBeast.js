@@ -19,7 +19,6 @@ handleTitleClick = () => {
   this.props.handleShowModalTitle(this.props.title);
   this.props.handleShowModalDescription(this.props.description)
   this.props.handleShowModalImageUrl(this.props.image_url)
-
   this.handleLikes();
 }
 
