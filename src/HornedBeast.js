@@ -24,7 +24,8 @@ handleTitleClick = () => {
 
 render() {
   return (
-    <Card style={{ width: '18rem' }} className="horned-beast">
+    <Card style={{ width: '100%' }} className="horned-beast p-1
+    h-100">
       <Card.Img 
         onClick={this.handleTitleClick}
         variant="top" 

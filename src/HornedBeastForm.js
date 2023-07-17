@@ -41,10 +41,10 @@ class HornedBeastForm extends React.Component {
   render() {
       return (
         <>
-          <Form 
+          <Form className="form" 
           >
             <Form.Label>Filter number of horns</Form.Label>
-            <Form.Select name="selected" 
+            <Form.Select className="form-select" name="selected" 
             onChange={this.handleSubmit}
             >
               <option value="1">One</option>
