@@ -5,6 +5,7 @@ import Footer from './Footer.js';
 import './App.css';
 import data from './data.json';
 import SelectedBeast from "./SelectedBeast.js";
+import HornedBeastForm from './HornedBeastForm.js';
  
 class App extends React.Component {
   constructor(props) {
@@ -12,15 +13,16 @@ class App extends React.Component {
     this.state = {
       hearts: '',
       isModalDisplaying: false,
-      hornedBeastName: ''
+      hornedBeastName: '',
+      filteredData: data
     }
   }
 
-  // addHearts = () => {
-  //   this.setState({
-  //     hearts: this.state.hearts + '❤️'
-  //   });
-  // }
+  updatedHornBeast = (value) =>  {
+    this.setState({
+      filteredData: value
+    })
+  }
 
   handleShowModalTitle = (title) => {
     this.setState({
@@ -52,17 +54,16 @@ class App extends React.Component {
     return (
       <div className="main-container">
 
-        {/* <p onClick={this.handleShowModal}>Clicks </p> */}
-
         <Header
-        // hearts={this.state.hearts}
         />
+        <HornedBeastForm
+        updatedHornBeast={this.updatedHornBeast}
+        data={data}/>
         <Main
-        // addHearts={this.addHearts}
         handleShowModalTitle={this.handleShowModalTitle}
         handleShowModalDescription={this.handleShowModalDescription}
         handleShowModalImageUrl={this.handleShowModalImageUrl}
-        data={data}
+        data={this.state.filteredData}
         />
         <Footer/>
         <SelectedBeast isModalDisplaying={this.state.isModalDisplaying}
